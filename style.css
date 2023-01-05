@@ -197,10 +197,8 @@ main{
         .mensaje{
                 font-size: 35px;
         }
-
-        .ajustarContenidoResponsive{
-                height: 0px;
-                display: inline;
+        .mostrarMensaje{
+                height: 150px;
         }
 
         .contenido-derecha .mensaje p{
@@ -278,6 +276,9 @@ main{
 
         .mensaje{
                 font-size: 22px;
+        }
+        .mostrarMensaje{
+                height: 150px;
         }
 
         .contenido-derecha .mensaje p{
