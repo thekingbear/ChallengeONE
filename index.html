@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptar Texto</title>
+        <link href="style.css" rel="stylesheet">
+        <link href="reset.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <img src="imagenes/Vector.png" class="logoAlura">
+                <h1>Encriptador de texto</h1>
+            </div>         
+        </header>
+        
+        <main>
+
+            <div class="botones">
+                <div class="escribir-texto">
+                    <textarea class="leerTexto" type="text" cols="40" rows="18" placeholder="Ingrese texto aquí" onchange="leerTexto(this.value)"></textarea>
+                </div>
+
+                <p class="advertencia">
+                    <img src="imagenes/signo_admiracion.png" alt="signo de admiración">
+                     Las mayúsculas y los acentos no se tendrán en cuenta</p>
+                <button class="btnEncriptar" onclick="encriptarTexto(); mostrarBtnCopia();">Encriptar</button>
+                <button class="btnDesencriptar" onclick="desencriptarTexto(); mostrarBtnCopia();">Desencriptar</button>
+            </div>
+
+            <section class="contenido-derecha">
+                <div class="persona-lupa">
+                    <img src="imagenes/Muñeco.png">
+                </div>
+
+                <div class="ajustarContenidoResponsive">
+                    <textarea readonly="readonly" class="mostrarMensaje"></textarea>
+                </div>
+
+                <span class="mensaje">Ningún elemento fue encontrado
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                </span>
+                <button class="btnCopiar">Copiar</button>
+                <span id="copiar"></span>
+                
+
+                     
+            </section>
+        </main>
+    
+        <script src="script.js"></script>
+    </body>
+    
+</html>
+

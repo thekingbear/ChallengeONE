@@ -1,0 +1,306 @@
+body{
+        background-color: #d1d8ff;
+}
+
+.caja{
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 40px;
+        font-size: 40px;
+        font-weight: bold;
+}
+
+.logoAlura{
+        display: inline-block;
+}
+.caja h1{
+        display: inline-block;
+        padding-left: 5%;
+}
+
+main{
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+        padding-top: 40px;
+}
+
+.leerTexto{
+        width: 100%;
+        background-color: #d1d8ff;
+        display: inline-block;
+        vertical-align: top;
+        color: #0A3871;
+        font-size: 32px;
+        border: none;
+        resize: none;
+}
+
+
+
+::placeholder{
+        color: #0A3871;
+}
+
+.contenido-derecha{
+        width: 40%;
+        height: 800px;
+        display: inline-block;
+        padding-top: 40px;
+        margin-left: 2%;
+        background-color: #ffffff;
+        border-radius: 32px;
+        text-align: center;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.30);
+}
+
+.persona-lupa{
+        margin-top: 45%;  
+}
+
+.mensaje{
+        font-weight: bold;
+        font-size: 24px;  
+        line-height: 120%;
+        display: block;
+        background-color: transparent;
+        text-align: center;
+}
+
+.mostrarMensaje{
+        width: 100%;
+        visibility: hidden;
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        font-size: 20px;
+        resize: none;
+}
+
+.contenido-derecha p{
+        font-size: 16px;
+        line-height: 150%;
+}
+
+.contenido-derecha .mensaje p{
+        font-size: 19px;
+        font-weight: lighter;
+}
+
+.btnCopiar{
+        text-align: center;
+        width: 45%;
+        padding: 20px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        gap: 8px;
+        background: transparent;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        font-size: 18px;
+        visibility: hidden; 
+}
+
+.botones{
+        width: 50%;
+        margin-top: 100px;
+        display: inline-block;
+        text-align: center;
+        vertical-align: bottom;
+}
+
+.advertencia{
+        text-align: left;
+        margin-bottom: 10px;
+}
+
+.btnEncriptar{
+        text-align: center;
+        width: 45%;
+        padding: 24px;
+        gap: 8px;
+        background: #0A3871;
+        border-radius: 24px;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 18px;
+        border-color: #ffffff;
+}
+
+.btnDesencriptar{
+        text-align: center;
+        width: 45%;
+        padding: 24px;
+        gap: 8px;
+        background: #ffffff;
+        border-radius: 24px;
+        color: #0A3871;
+        cursor: pointer;
+        font-size: 18px;
+        border-color: #0A3871;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+        .caja, main, .advertencia, .persona-lupa{
+                width: auto;
+        }
+
+        .escribir-texto{
+                padding-left: 40px;
+        }
+        .leerTexto{
+                width: 90%;
+                height: 500px;
+                font-size: 40px;
+        }
+
+        .logoAlura{
+                padding-left: 45%;
+                margin-bottom: 5%;
+        }
+
+        .caja h1{
+                font-size: 40px;
+                padding-left: 26%;
+        }
+
+        .botones, .mensaje{
+                width: 100%;
+        }
+
+        .advertencia{
+                font-size: 22px;
+        }
+        .btnDesencriptar, .btnEncriptar{
+                width: 40%;
+                margin-bottom: 20px;
+                font-size: 22px;
+        }
+
+        .btnEncriptar{
+                margin-right: 35px;    
+        }
+
+        .contenido-derecha{
+                height: auto;
+                width: 80%;
+                padding-top: 10px;
+                margin-left: 75px;  
+        }
+
+        .mensaje{
+                font-size: 35px;
+        }
+
+        .ajustarContenidoResponsive{
+                height: 0px;
+                display: inline;
+        }
+
+        .contenido-derecha .mensaje p{
+                font-size: 25px;
+                font-weight: lighter;
+        }
+
+        .btnCopiar{
+                font-size: 20px;
+        }
+
+        main p{
+                font-size: 22px;
+                padding-left: 24px;
+        }
+        main p, .botones{
+                margin-top: 10px;
+        }
+
+        .persona-lupa{
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+                margin-top: 0;
+        }
+}
+@media screen and (max-width:480px) {
+        
+        .caja, main, .advertencia, .persona-lupa{
+                width: auto;
+        }
+
+        .escribir-texto{
+                padding-left: 24px;
+        }
+        .leerTexto{
+                width: 90%;
+                height: 250px;
+                font-size: 25px;
+        }
+
+        .logoAlura{
+                padding-left: 45%;
+                margin-bottom: 5%;
+        }
+
+        .caja h1{
+                font-size: 30px;
+                padding-left: 15%;
+        }
+
+        .advertencia{
+                font-size: 16px;
+        }
+        .botones, .mensaje{
+                width: 100%;
+        }
+        .btnDesencriptar, .btnEncriptar{
+                width: 90%;
+                margin-bottom: 20px;
+                padding: 20px;
+                font-size: 20px;
+        }
+
+        .btnEncriptar{
+                margin-right: 0px;
+        }
+
+        .contenido-derecha{
+                height: auto;
+                width: 80%;
+                padding-top: 10px;
+                margin-left: 38px;  
+        }
+
+        .mensaje{
+                font-size: 22px;
+        }
+
+        .contenido-derecha .mensaje p{
+                font-size: 15px;
+        }
+
+        .btnCopiar{
+                font-size: 15px;
+                padding: 10px;
+        }
+
+        main p{
+                font-size: 14px;
+                padding-left: 24px;
+        }
+        main p, .botones{
+                margin-top: 10px;
+        }
+
+        .persona-lupa{
+                visibility: hidden;
+                width: 0px;
+                height: 0px;
+                margin-top: 0;
+        }
+}
