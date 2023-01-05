@@ -30,7 +30,7 @@ function encriptarTexto(){
     //Cambia los stylos de css para que sean dinámicos al dar click
     imagenLupa.setAttribute("style", "visibility: hidden; width: 0px; height: 0px; margin-top: 0;");
     escribirPantalla.setAttribute("style", "font-weight: lighter; padding:15px; visibility: visible;");
-    escribirPantalla.setAttribute("rows", "15");
+    escribirPantalla.setAttribute("rows", "22");
     ocultarSpan.setAttribute("style","visibility: hidden; height:0px");
     }else{
         alert("Por favor inserte un texto primero")
@@ -50,7 +50,7 @@ function desencriptarTexto(){
     //Cambia los stylos de css para que sean dinámicos al dar click
     imagenLupa.setAttribute("style", "visibility: hidden; width: 0px; height: 0px; margin-top: 0;");
     escribirPantalla.setAttribute("style", "font-weight: lighter; padding:15px; visibility: visible;");
-    escribirPantalla.setAttribute("rows", "15");
+    escribirPantalla.setAttribute("rows", "22");
     ocultarSpan.setAttribute("style","visibility: hidden; height:0px");
     }else{
         alert("Por favor inserte un texto primero")
